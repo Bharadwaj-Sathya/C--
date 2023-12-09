@@ -1,8 +1,6 @@
 #include <iostream>
 
-int main()
-{
-
-    std ::cout << "Hello C++ World";
-    return 0;
+int main() {
+  std ::cout << "Hello C++ World";
+  return 0;
 }
