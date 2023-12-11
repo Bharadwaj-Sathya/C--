@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 
 using namespace std;
 
@@ -15,7 +14,9 @@ int main() {
     cout << "Both are equal" << endl;
   }
 
-  string str = "one";
+  bool val = true;
+
+  printf(val ? "True" : "False");
 
   return 0;
 }
