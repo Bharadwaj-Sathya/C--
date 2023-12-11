@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+
 using namespace std;
 
 int main() {
@@ -12,5 +14,8 @@ int main() {
   } else {
     cout << "Both are equal" << endl;
   }
+
+  string str = "one";
+
   return 0;
 }
