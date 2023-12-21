@@ -1,5 +1,5 @@
 #include <iostream>
-// #define NULL 0
+// #define NULL 0 // macros
 using namespace std;
 
 void printVal(int a) { printf("Integer value is %d\n", a); }
