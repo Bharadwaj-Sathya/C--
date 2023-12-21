@@ -8,6 +8,7 @@ class User {
 
  public:
   string name = "";
+  int phoneNumber = 0;
 
   void setId(const int& newId) {
     id = newId;
