@@ -1,29 +1,53 @@
 #include <iostream>
 using namespace std;
 
-class Rectangle {
- private:
+class Rectangle
+{
+private:
   int length;
   int breadth;
 
- public:
-  Rectangle(int l, int b) {
+public:
+  Rectangle()
+  {
+    length = 0;
+    breadth = 0;
+  }
+
+  Rectangle(int l, int b)
+  {
     length = l;
     breadth = b;
   }
 
-  int area() { return length * breadth; }
+  int area()
+  {
+    return length * breadth;
+  }
 
-  void setLength(int l) { length = l; }
+  void setLength(int l)
+  {
+    length = l;
+  }
 
-  void setBreadth(int b) { breadth = b; }
+  void setBreadth(int b)
+  {
+    breadth = b;
+  }
 
-  int getLength() { return length; }
+  int getLength()
+  {
+    return length;
+  }
 
-  int getBreadth() { return breadth; }
+  int getBreadth()
+  {
+    return breadth;
+  }
 };
 
-int main() {
+int main()
+{
   int length = 0;
   int breadth = 0;
   cout << "Enter Length and Breadth values:";
