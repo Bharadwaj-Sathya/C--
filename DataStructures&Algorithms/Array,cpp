@@ -1,0 +1,10 @@
+#include <iostream>
+
+class Array
+{
+public:
+    Array()
+    {
+        
+    }
+}
