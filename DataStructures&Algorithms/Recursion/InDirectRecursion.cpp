@@ -1,11 +1,12 @@
 #include <iostream>
 using namespace std;
 
+void funcB(int n);
 void funcA(int n)
 {
     if (n > 0)
     {
-        cout << "n" << endl;
+        cout << n << endl;
         funcB(n - 1);
     }
 }
@@ -14,8 +15,8 @@ void funcB(int n)
 {
     if (n > 1)
     {
-        cout << "n" << endl;
-        funcB(n / 2);
+        cout << n << endl;
+        funcA(n / 2);
     }
 }
 
