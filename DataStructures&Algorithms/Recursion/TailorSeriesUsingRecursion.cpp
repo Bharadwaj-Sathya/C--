@@ -31,12 +31,30 @@ double tailorseries1(int x, int n)
     return tailorseries1(x, n - 1);
 }
 
+double tailorseriesIterative(int x, int n)
+{
+    double s = 1;
+    double num = 1;
+    double den = 1;
+
+    for (int i = 1; i <= n; i++)
+    {
+
+        num *= x;
+        den *= i;
+        s += num / den;
+    }
+
+    return s;
+}
+
 int main()
 {
     int x = 1;
     int y = 10;
     cout << tailorSeries(x, y) << endl;
     cout << tailorseries1(x, y) << endl;
+    cout << tailorseriesIterative(x, y) << endl;
 
     return 0;
 }
