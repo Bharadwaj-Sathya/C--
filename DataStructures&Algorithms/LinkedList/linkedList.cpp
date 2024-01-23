@@ -5,17 +5,27 @@
 using namespace std;
 
 // Creating a node
-class Node {
-   public:
+class Node
+{
+public:
   int value;
-  Node* next;
+  Node *next;
 };
 
-int main() {
-  Node* head;
-  Node* one = NULL;
-  Node* two = NULL;
-  Node* three = NULL;
+class LinkedList
+{
+
+  int main()
+  {
+  }
+};
+
+int main()
+{
+  Node *head;
+  Node *one = NULL;
+  Node *two = NULL;
+  Node *three = NULL;
 
   // allocate 3 nodes in the heap
   one = new Node();
@@ -34,7 +44,8 @@ int main() {
 
   // print the linked list value
   head = one;
-  while (head != NULL) {
+  while (head != NULL)
+  {
     cout << head->value;
     head = head->next;
   }
