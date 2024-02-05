@@ -51,7 +51,14 @@ public:
 int main()
 {
     Solution sol;
-    int res = sol.fib(5);
+    int res = sol.fib(2);
     cout << res << endl;
+
+    res = sol.fib(3);
+    cout << res << endl;
+
+    res = sol.fib(4);
+    cout << res << endl;
+
     return 0;
 }
