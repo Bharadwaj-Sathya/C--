@@ -17,10 +17,13 @@ int main() {
         return 1; // Exit the program with an error code
     }
 
-    // Print the pattern
+    // Print the star pattern
     for(int i = 0; i <= (alphabet - 'A'); i++) {
+        for(int j = 0; j < (alphabet - 'A' - i); j++) {
+            cout << " ";
+        }
         for(int j = 0; j <= i; j++) {
-            cout << char('A' + j) << " ";
+            cout << "* ";
         }
         cout << endl;
     }
